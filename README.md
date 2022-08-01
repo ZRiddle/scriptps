@@ -13,6 +13,16 @@ pyenv requires additional steps to ensure that your shell checks for python in y
 
 `https://github.com/pyenv/pyenv#basic-github-checkout`
 
+For MacOS users, adding this should work:
+
+```shell
+alias python='python3'
+
+# pyenv
+alias brew='env PATH="${PATH//$(pyenv root)\/shims:/}" brew'
+eval "$(pyenv init -)"
+```
+
 In order to successfully build Python on your machine, you will need to install some dependencies needed for the build to succeed:
 
 `brew install openssl readline sqlite3 xz zlib`
