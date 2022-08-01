@@ -2,9 +2,9 @@ import click
 import os
 from typing import List, Dict
 
-from src.ps_config import PsConfig
-from src.script_builder import ScriptBuilder, open_photoshop, quit_photoshop, close_current_doc
-from src.order import load_orders, Order
+from psa.ps_config import PsConfig
+from psa.script_builder import ScriptBuilder, open_photoshop, quit_photoshop, close_current_doc
+from psa.order import load_orders, Order
 
 
 @click.group()
