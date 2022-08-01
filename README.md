@@ -1,5 +1,5 @@
 
-## Setup
+# Setup
 
 Install brew if not already installed
 
@@ -40,3 +40,7 @@ python setup.py install
 ```
 
 # CLI Usage
+
+## Setup
+
+Setup the `config.ini` file to point to the right places
