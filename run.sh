@@ -1,5 +1,6 @@
 #!/bin/bash
 
-source source/scriptps/venv/bin/activate || source ~/.bash_profile
 cd scriptps || cd source/scriptps
-psa run
+source venv/bin/activate || source ~/.bash_profile
+
+python psa/cli/psa_cli.py

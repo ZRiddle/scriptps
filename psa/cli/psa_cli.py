@@ -49,6 +49,10 @@ def get_order_lookups(orders: List[Order]) -> Dict[str, List[Order]]:
 @click.option("-o", "--overwrite", is_flag=True, help="Overwrite existing files if present", default=True)
 @click.option("-v", "--verbose", is_flag=True, help="verbosity", default=True)
 def run(overwrite: bool = True, verbose: bool = True):
+    _run()
+
+
+def _run():
     print_header()
     config = PsConfig.from_file()
     print(config)
@@ -69,9 +73,9 @@ def run(overwrite: bool = True, verbose: bool = True):
         print(f"  {len(order_list)} orders saved")
         close_current_doc()
 
-    print("\nSuccess! Closing Photoshop.")
+    print("\nSuccess! Closing Photoshop.\n\n")
     quit_photoshop()
 
 
-
-
+if __name__ == "__main__":
+    _run()

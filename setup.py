@@ -10,7 +10,7 @@ PROD_DEPENDENCIES = [
 
 setuptools.setup(
     name='scriptps',
-    version='1.0.2',
+    version='1.0.3',
     url="https://github.com/ZRiddle/scriptps",
     description='Photoshop scripting with python using macOS',
     author='Zach Riddle',
@@ -20,7 +20,7 @@ setuptools.setup(
     # package_dir={"": "psa"},
     entry_points={
         "console_scripts": [
-            "psa=psa.cli.psa:psa",
+            "psa=psa.cli.psa_cli:psa",
         ]
     }
 )
